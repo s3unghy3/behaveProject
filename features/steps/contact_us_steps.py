@@ -64,8 +64,3 @@ def succeeded_msg(context, succeeded):
     success = context.driver.find_element(*locator["succ_contact_msg"]).text
     assert success == succeeded, f"{succeeded}"
 
-
-@then('the "{failed}" alert is shown')
-def failed_msg(context, failed):
-    failure = context.driver.find_element(*locator["fail_contact_msg"]).text
-    assert failure == failed, f"{failed}"

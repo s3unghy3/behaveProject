@@ -1,6 +1,19 @@
 from selenium.webdriver.common.by import By
 
 locator = {
+    "empty_cart": (By.XPATH, '//*[@id="header"]/div[3]/div/div/div[3]/div/a/span[5]'),
+    "delete_icon": (By.XPATH, '//*[@id="1_1_0_0"]/i'),
+    "cart_qty": (By.XPATH, '//*[@id="header"]/div[3]/div/div/div[3]/div/a/span[1]'),
+    "total_product": (By.XPATH, '//*[@id="total_product"]'),
+    "shipping": (By.XPATH, '//*[@id="total_shipping"]'),
+    "total": (By.XPATH, '//*[@id="total_price"]'),
+    "cart_summary": (By.XPATH, '//*[@id="cart_summary"]'),
+    "before_button": (By.XPATH, '//*[@id="layer_cart"]/div[1]/div[1]/span'),
+    "women_button": (By.XPATH, '//*[@id="block_top_menu"]/ul/li[1]/a'),
+    "product_name": (By.XPATH, '//*[@id="center_column"]/ul/li/div/div[2]/h5/a'),
+    "subtract": (By.XPATH, '//*[@id="cart_quantity_down_1_1_0_0"]/span/i'),
+    "proceed_to_checkout": (By.XPATH, '//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a/span'),
+    "add_to_cart": (By.XPATH, '//*[@id="add_to_cart"]/button/span'),
     "order_ref": (By.XPATH, '//*[@id="id_order"]'),
     "alert_warning": (By.XPATH, '//*[@id="center_column"]/p'),
     "search_button": (By.XPATH, '//*[@id="searchbox"]/button'),
