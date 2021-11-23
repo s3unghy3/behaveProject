@@ -1,6 +1,11 @@
 from selenium.webdriver.common.by import By
 
 locator = {
+    "twitter": (By.XPATH, '//*[@id="center_column"]/div/div/div[3]/p[7]/button[1]'),
+    "facebook": (By.XPATH, '//*[@id="center_column"]/div/div/div[3]/p[7]/button[2]'),
+    "googleplus": (By.XPATH, '//*[@id="center_column"]/div/div/div[3]/p[7]/button[3]'),
+    "pinterest": (By.XPATH, '//*[@id="center_column"]/div/div/div[3]/p[7]/button[4]'),
+    "header_user_info": (By.XPATH, '//*[@id="header"]/div[2]/div/div/nav/div[1]'),
     "order-confirmation": (By.XPATH, '//*[@id="center_column"]/div'),
     "confirm_order": (By.XPATH, '//*[@id="cart_navigation"]/button/span'),
     "payment": (By.XPATH, '//*[@id="HOOK_PAYMENT"]/div[2]/div/p/a'),
@@ -17,6 +22,7 @@ locator = {
     "cart_summary": (By.XPATH, '//*[@id="cart_summary"]'),
     "before_button": (By.XPATH, '//*[@id="layer_cart"]/div[1]/div[1]/span'),
     "women_button": (By.XPATH, '//*[@id="block_top_menu"]/ul/li[1]/a'),
+    "blouse": (By.XPATH, '//*[@id="homefeatured"]/li[2]/div/div[2]/h5/a'),
     "product_name": (By.XPATH, '//*[@id="center_column"]/ul/li/div/div[2]/h5/a'),
     "subtract": (By.XPATH, '//*[@id="cart_quantity_down_1_1_0_0"]/span/i'),
     "proceed_to_checkout": (By.XPATH, '//*[@id="layer_cart"]/div[1]/div[2]/div[4]/a/span'),
@@ -45,8 +51,8 @@ locator = {
     "create_account_button": (By.ID, "SubmitCreate"),
     "gender_radiobutton_mr": (By.ID, "id_gender1"),
     "gender_radiobutton_mrs": (By.ID, "id_gender2"),
-    "firstname": (By.ID, "customer_firstname"),
-    "lastname": (By.ID, "customer_lastname"),
+    "firstname": (By.XPATH, '//*[@id="customer_firstname"]'),
+    "lastname": (By.XPATH, '//*[@id="customer_lastname"]'),
     "sign_up_password": (By.ID, "passwd"),
     "days_dropdown": (By.ID, "days"),
     "months_dropdown": (By.ID, "months"),

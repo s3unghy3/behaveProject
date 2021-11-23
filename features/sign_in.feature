@@ -1,4 +1,4 @@
-Feature: AutomationPractice sign in page test
+Feature: Testing sign in page
 
   Background:
     Given The Home page is open

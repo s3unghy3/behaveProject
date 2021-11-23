@@ -1,4 +1,4 @@
-Feature: Testing the Contact Us page
+Feature: Testing the empty cart
 
   Background:
     Given The Home page is open
