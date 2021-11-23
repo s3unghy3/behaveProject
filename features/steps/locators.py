@@ -1,10 +1,17 @@
 from selenium.webdriver.common.by import By
 
 locator = {
+    "order-confirmation": (By.XPATH, '//*[@id="center_column"]/div'),
+    "confirm_order": (By.XPATH, '//*[@id="cart_navigation"]/button/span'),
+    "payment": (By.XPATH, '//*[@id="HOOK_PAYMENT"]/div[2]/div/p/a'),
+    "shipping_checkout": (By.XPATH, '//*[@id="form"]/p/button'),
+    "service":  (By.XPATH, '//*[@id="uniform-cgv"]/span'),
+    "address_checkout":  (By.XPATH, '//*[@id="center_column"]/form/p/button/span'),
+    "checkout":  (By.XPATH, '//*[@id="center_column"]/p[2]/a[1]/span'),
     "empty_cart": (By.XPATH, '//*[@id="header"]/div[3]/div/div/div[3]/div/a/span[5]'),
     "delete_icon": (By.XPATH, '//*[@id="1_1_0_0"]/i'),
-    "cart_qty": (By.XPATH, '//*[@id="header"]/div[3]/div/div/div[3]/div/a/span[1]'),
-    "total_product": (By.XPATH, '//*[@id="total_product"]'),
+    "total_product": (By.XPATH, '//*[@id="product_1_1_0_0"]/td[6]'),
+    "total_products": (By.XPATH, '//*[@id="total_product"]'),
     "shipping": (By.XPATH, '//*[@id="total_shipping"]'),
     "total": (By.XPATH, '//*[@id="total_price"]'),
     "cart_summary": (By.XPATH, '//*[@id="cart_summary"]'),

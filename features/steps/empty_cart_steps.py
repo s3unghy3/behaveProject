@@ -34,6 +34,7 @@ def click_checkout_button(context):
     context.driver.find_element(*locator["proceed_to_checkout"]).click()
     time.sleep(5)
 
+
 @given("The Before button is clicked")
 def click_before_button(context):
     context.driver.find_element(*locator["before_button"]).click()
@@ -44,8 +45,10 @@ def click_delete_icon(context):
     context.driver.find_element(*locator["delete_icon"]).click()
     time.sleep(5)
 
-# @when("The Subtract button is clicked")
-# def click_subtract_button(context):
-#     context.driver.find_element(*locator["subtract"]).click()
+
+@when("The Subtract icon is clicked")
+def click_subtract_icon(context):
+    context.driver.find_element(*locator["subtract"]).click()
+    time.sleep(5)
 
 
